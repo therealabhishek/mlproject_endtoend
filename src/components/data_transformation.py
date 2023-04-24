@@ -35,10 +35,10 @@ class DataTransformation:
             This function will be used to transform our data
             
             """
-            numerical_columns = ["writing score", "reading score"]
+            numerical_columns = ["writing_score", "reading_score"]
                 
-            categorical_columns = ["gender", "race/ethnicity", "parental level of education", "lunch", 
-                                   "test preparation course"]
+            categorical_columns = ["gender", "race_ethnicity", "parental_level_of_education", "lunch", 
+                                   "test_preparation_course"]
             
             num_pipeline = Pipeline(
                 steps=[
@@ -83,7 +83,7 @@ class DataTransformation:
 
             preprocessing_obj = self.get_data_transformer_object()
 
-            target_column_name = "math score"
+            target_column_name = "math_score"
 
             logging.info("Separating independent and target columns for train data")
 
